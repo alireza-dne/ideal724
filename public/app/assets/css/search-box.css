@@ -1,0 +1,108 @@
+header nav .search-box {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    width: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    position: relative;
+}
+
+header nav .search-box input {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+header nav .search-box.active {
+    padding: 0.2rem 0.5rem;
+    width: 300px;
+}
+
+header nav .search-box.active input {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+}
+
+.search-result {
+    position: absolute;
+    color: #fff;
+    width: 150%;
+    height: 300px;
+    background-color: #11293b;
+    top: 100%;
+    padding: 1rem;
+    border: 2px solid #00bade;
+    overflow: auto;
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 8;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.search-result.active {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-result::-webkit-scrollbar {
+    background-color: #11293b;
+    width: 5px;
+}
+
+.search-result::-webkit-scrollbar-thumb {
+    background-color: #00bade;
+}
+
+.search-result li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #00bade;
+    padding: 1rem 0;
+    gap: 0.5rem;
+}
+
+.search-result a {
+    color: #fff;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    display: flex;
+}
+
+.search-result a:hover {
+    color: #00bade;
+}

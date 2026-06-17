@@ -1,0 +1,6 @@
+config.php - 4
+
+کلا فایل cpnfig.php
+
+
+.htaccess

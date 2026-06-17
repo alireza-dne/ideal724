@@ -1,0 +1,264 @@
+html {
+    font-size: 100%;
+    font-family: "vazir";
+    scroll-behavior: smooth;
+    /* direction: rtl; */
+}
+
+
+/* ------------------------------------ */
+
+.login-register {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(12, 88, 128, 0.9), rgba(9, 49, 27, 0.8)), url('../img/auth.jpg') 0 0/cover no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-register-box {
+    width: 380px;
+    height: 680px;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.login-register-box .top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    margin: auto;
+    box-shadow: 0 0px 30px 10px rgba(46, 49, 146, 0.3);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.login-register-box .top button {
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.login-register-box .top .register-btn,
+.login-register-box .top .login-btn {
+    border-radius: 2rem 0 0 2rem;
+    -webkit-border-radius: 2rem 0 0 2rem;
+    -moz-border-radius: 2rem 0 0 2rem;
+    -ms-border-radius: 2rem 0 0 2rem;
+    -o-border-radius: 2rem 0 0 2rem;
+    color: #0c5880;
+}
+
+.login-register-box .top .register-btn.active {
+    color: #fff;
+}
+
+.login-register-box .top .login-btn.active {
+    color: #fff;
+}
+
+.login-register-box .top .changer {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #0c5880;
+    top: 0;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.login-register-box .top.login .changer {
+    left: 50%;
+}
+
+.login-register-box .top.register .changer {
+    left: 0%;
+}
+
+.instagram-colorfull {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f56040, #f77737, #fcaf45, #ffdc80);
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.telegram-colorfull {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(#24A1DE);
+    color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.form-box {
+    display: flex;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.form-box .login-form,
+.form-box .forget-password-form {
+    min-width: 100%;
+    margin-left: 2rem;
+}
+
+.form-box .register-form {
+    min-width: 100%;
+    margin-right: 2rem;
+}
+
+.form-controll {
+    position: relative;
+}
+
+.form-controll input {
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    outline: none;
+    border: 1px solid rgba(12, 88, 128, 0.2);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+}
+
+.form-controll .register-form input {
+    padding: 0.2rem;
+}
+
+.form-controll.error input {
+    border: 2px solid #c00;
+}
+
+.form-controll.success input {
+    border: 2px solid rgb(41, 173, 69);
+}
+
+.form-controll span {
+    margin: 0.3rem 2rem;
+    font-size: 0.7rem;
+    color: #c00;
+    display: none;
+}
+
+.form-controll.error span {
+    display: flex;
+}
+
+.form-controll input:focus {
+    border: 2px solid rgba(12, 88, 128, 0.7);
+}
+
+.form-controll .red,
+.form-controll .green {
+    position: absolute;
+    display: none;
+}
+
+.form-controll.error .red,
+.form-controll.success .green {
+    display: flex;
+    left: 4%;
+    top: 25%;
+}
+
+.form-box .forget-password-form button,
+.form-box .login-form button,
+.form-box .register-form button {
+    background-color: #0c5880;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 1px solid #0c5880;
+    color: #fff;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.form-box .forget-password-form button:hover,
+.form-box .login-form button:hover,
+.form-box .register-form button:hover {
+    color: #0c5880;
+    background-color: #fff;
+}
+
+.login-form a,
+.forget-password-form a {
+    color: #0c5880;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.login-form a:hover,
+.forget-password-form a:hover {
+    color: #24A1DE;
+}
+
+.final-message-login,
+.final-message-register {
+    font-size: 0.7rem !important;
+}

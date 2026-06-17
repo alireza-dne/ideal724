@@ -1,0 +1,6 @@
+*.log
+
+/.vscode
+/auth.json
+/node_modules
+/lib/config.php

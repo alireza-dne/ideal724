@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    .sidebar-header {
+        width: 100%;
+    }
+    .body-header {
+        width: 100%;
+    }
+    .serach-box,
+    .fullscreen {
+        display: none !important;
+    }
+    #sidebar.active {
+        right: -14rem;
+    }
+    #sidebar {
+        right: 0;
+        z-index: 5;
+    }
+    .main-body {
+        margin: 3.5rem 0 0 0;
+    }
+    .main-body.active {
+        margin: 3.5rem 0 0 0;
+    }
+    .body-header {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    .body-header.active {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+    .checkbox-wrapper-40 input[type=checkbox] {
+        width: 0.6em;
+        height: 0.6em;
+    }
+}

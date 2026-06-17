@@ -1,0 +1,10 @@
+    <script src="<?= asset('public/app/assets/js/jquery-3.7.1.min.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/bootstrap.bundle.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/all.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/typed.min.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/script.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/profile-icon.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/header-search-box.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/product-script.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/category.js') ?>"></script>
+    <script src="<?= asset('public/app/assets/js/error-404.js') ?>"></script>
